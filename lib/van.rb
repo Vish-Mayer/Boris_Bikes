@@ -1,6 +1,3 @@
-require_relative 'bike'
-require_relative 'dockingstation'
-
 class Van
 
   attr_reader :broken_bikes
