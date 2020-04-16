@@ -15,7 +15,7 @@ First weeks project at Maker's Academy. A pair programming challenge to build a 
 
 ## How to use
 
-Boris Bikes is written in Ruby and runs directly from the command line. Install by either cloning or forking the repository. Change directory to the root folder and run bundle install.
+Boris Bikes is written in Ruby and runs directly from the command line, install either by cloning or forking the repository. Change directory to the root folder and run bundle install.
 
 ```
 $ bundle install
@@ -30,7 +30,7 @@ $ require './lib/dockingstation.rb'
 
 ```
 
-To run the tests for the application, run rspec.
+To run the tests for the application, run RSpec.
 
 ```
 $ rspec 
