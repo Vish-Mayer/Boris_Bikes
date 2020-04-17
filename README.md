@@ -1,17 +1,34 @@
 # Boris Bikes
-```
-                                                          ~~@ 
- -------- __@      __@       __@       __@      __~@       /\,
- ----- _`\<,_    _`\<,_    _`\<,_     _`\<,_    _`\<,_   -|~(*)
- ---- (*)/ (*)  (*)/ (*)  (*)/ (*)  (*)/ (*)  (*)/ (*)  (*)
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ```
+
+                                                 *******
+                                 ~             *---*******
+                                ~             *-----*******
+                         ~                   *-------*******
+                        __      _   _!__     *-------*******
+                   _   /  \_  _/ \  |::| ___ **-----********   ~
+                 _/ \_/^    \/   ^\/|::|\|:|  **---*****/^\_
+              /\/  ^ /  ^    / ^ ___|::|_|:|_/\_******/  ^  \
+             /  \  _/ ^ ^   /    |::|--|:|---|  \__/  ^     ^\___
+           _/_^  \/  ^    _/ ^   |::|::|:|-::| ^ /_  ^    ^  ^   \_
+          /   \^ /    /\ /       |::|--|:|:--|  /  \        ^      \
+         /     \/    /  /        |::|::|:|:-:| / ^  \  ^      ^     \
+   _Q   / _Q  _Q_Q  / _Q    _Q   |::|::|:|:::|/    ^ \   _Q      ^
+  /_\)   /_\)/_/\\)  /_\)  /_\)  |::|::|:|:::|          /_\)
+_O|/O___O|/O_OO|/O__O|/O__O|/O__________________________O|/O__________
+//////////////////////////////////////////////////////////////////////
+
+
+```
+##### [*OVERVIEW*](#Overview) | [*HOW TO USE*](#How-to-use) | [*SCOPE*](#scope) | [*USER REQUIREMENTS*](#User-Requirements )
 ___
 
 ## Overview
 
 First weeks project at Maker's Academy. A pair programming challenge to build a program that will emulate a bike sharing system.
+
+A user can dock bikes into a docking station. Bikes can be released from the docking station for use and can then be returned. A user has the ability to report a broken bike. A van is able to pick up broken bikes from a docking station and can drop them off to a gargage where they can be fixed. A van is also able pick up fixed bikes from a garage and distribute them to docking stations. 
 
 ## How to use
 
