@@ -5,7 +5,7 @@ class Bike
   end
 
   def working?
-    @broken == nil 
+    !@broken
   end
 
   def report_broken

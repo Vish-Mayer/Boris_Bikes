@@ -17,4 +17,12 @@ describe Bike do
     bike.report_broken
     expect(bike).to be_broken
   end
+
+  it { is_expected.to respond_to :fix }
+
+  it 'can be fixed' do
+    bike.report_broken
+    bike.fix 
+    expect(bike).to be_working
+  end 
 end

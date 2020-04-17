@@ -2,9 +2,10 @@ require 'garage'
 
 describe Garage do
   subject(:garage) { described_class.new }
-  let(:broken_bike) {double(:broken? => true)}
+  let(:broken_bike) {double(:broken? => true, :working? => false)}
   let(:garage_test) {double(:bikes => [broken_bike])}
 
+  it { is_expected.to respond_to(:bikes) }
 
   describe '#initialize' do
     it 'is initialized with an array with no bikes' do
