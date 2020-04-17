@@ -24,6 +24,6 @@ class Van
 
   def deliver_fixed(station)
     @fixed_bikes.map { |bike| station.bikes << bike }
-    @broken_bikes.clear
+    @fixed_bikes.clear
   end 
 end
