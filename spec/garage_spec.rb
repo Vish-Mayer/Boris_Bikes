@@ -18,8 +18,8 @@ describe Garage do
   describe '#fix_bikes' do
     it 'is expected to fix a bike' do
       allow(garage_test).to receive(:fix_bikes)
-      garage_test.fix_bikes
-      expect(garage_test.bikes).to eq [broken_bike]
+      allow(broken_bike).to receive(:fix)
+      expect(garage_test.fix_bikes).to eq broken_bike.fix 
     end
   end
 end
