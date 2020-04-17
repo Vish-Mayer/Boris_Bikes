@@ -1,10 +1,11 @@
-class Van
+# frozen_string_literal: true
 
+class Van
   attr_reader :broken_bikes, :fixed_bikes
 
   def initialize
     @broken_bikes = []
-    @fixed_bikes = [] 
+    @fixed_bikes = []
   end
 
   def pick_up_broken(station)
@@ -25,5 +26,5 @@ class Van
   def deliver_fixed(station)
     @fixed_bikes.map { |bike| station.bikes << bike }
     @fixed_bikes.clear
-  end 
+  end
 end

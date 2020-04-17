@@ -1,9 +1,10 @@
+# frozen_string_literal: true
+
 require_relative 'bike'
 require_relative 'van'
 require_relative 'garage'
 
 class DockingStation
-
   attr_reader :capacity, :bikes
   DEFAULT_CAPACITY = 20
 
@@ -13,7 +14,8 @@ class DockingStation
   end
 
   def dock(bike)
-    fail 'Docking station full' if full?
+    raise 'Docking station full' if full?
+
     bikes << bike
   end
 
@@ -26,7 +28,7 @@ class DockingStation
   private
 
   def unavailable
-    fail 'No bikes available'
+    raise 'No bikes available'
   end
 
   def full?

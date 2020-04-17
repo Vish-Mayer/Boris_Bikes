@@ -1,5 +1,6 @@
-class Bike
+# frozen_string_literal: true
 
+class Bike
   def broken?
     @broken
   end

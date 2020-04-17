@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'garage'
 
 describe Garage do
   subject(:garage) { described_class.new }
-  let(:broken_bike) {double(:broken? => true, :working? => false)}
-  let(:garage_test) {double(:bikes => [broken_bike])}
+  let(:broken_bike) { double(broken?: true, working?: false) }
+  let(:garage_test) { double(bikes: [broken_bike]) }
 
   it { is_expected.to respond_to(:bikes) }
 
@@ -19,7 +21,7 @@ describe Garage do
     it 'is expected to fix a bike' do
       allow(garage_test).to receive(:fix_bikes)
       allow(broken_bike).to receive(:fix)
-      expect(garage_test.fix_bikes).to eq broken_bike.fix 
+      expect(garage_test.fix_bikes).to eq broken_bike.fix
     end
   end
 end

@@ -1,13 +1,14 @@
+# frozen_string_literal: true
+
 require 'van'
 
 describe Van do
-
   subject(:van) { described_class.new }
-  let(:garage) {double(:bikes => [broken_bike, working_bike])}
-  let(:station) {double(:bikes => [broken_bike, working_bike])}
-  let(:broken_bike) {double(:broken? => true, :working? => false)}
-  let(:working_bike) {double(:working? => true, :broken? => false)}
-  
+  let(:garage) { double(bikes: [broken_bike, working_bike]) }
+  let(:station) { double(bikes: [broken_bike, working_bike]) }
+  let(:broken_bike) { double(broken?: true, working?: false) }
+  let(:working_bike) { double(working?: true, broken?: false) }
+
   it { is_expected.to respond_to(:broken_bikes) }
   it { is_expected.to respond_to(:fixed_bikes) }
 
@@ -17,7 +18,7 @@ describe Van do
     end
     it 'is initialized with an empty array to store fixed bikes' do
       expect(van.fixed_bikes).to be_empty
-    end 
+    end
   end
 
   it { is_expected.to respond_to(:pick_up_broken).with(1).argument }
@@ -74,5 +75,5 @@ describe Van do
       van.deliver_fixed(station)
       expect(van.fixed_bikes).to be_empty
     end
-  end 
+  end
 end
